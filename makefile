@@ -4,5 +4,5 @@ CFLAGS += -std=gnu11
 CFLAGS += -Wall -Werror
 
 
-defrag: main.c 
-	${CC} ${CFLAGS} -pthread -o fake main.c -g
+defrag: fake.c 
+	${CC} ${CFLAGS} -pthread -o fake fake.c -g
